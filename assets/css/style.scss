@@ -78,7 +78,6 @@ html {
 body {
     background: var(--white);
     overflow-x: hidden;
-    height: 300vh;
 }
 
 ::-webkit-scrollbar {
@@ -92,4 +91,75 @@ body {
     background: hsl(200, 50%, 20%);
     border-left: 2px solid var(--white);
 }
+
+/** REUSED STYLE **/
+.container { padding-inline: 15px; }
+
+button, a { transition: var(--transition); }
+
+/** HEADER **/
+.header {
+    position: relative;
+    z-index: 2;
+}
+
+.header-top {
+    background: var(--prussian-blue);
+    padding-block: 15px;
+}
+
+.header-top .container
+.header-top-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-top .container { gap: 8px 20px; }
+
+.header-top-list { gap: 15px; }
+
+.header-top-link {
+    color: var(--white);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-top-link:is(:hover, :focus) { color: var(--orange-soda); }
+
+.header-top-link ion-icon {
+    color: var(--orange-soda);
+    font-size: 15px;
+    --ionicon-stroke-width: 60px;
+}
+
+.header-top .wrapper,
+.header-top-social-list {
+    display: flex;
+    align-items: center;
+}
+
+.header-top .wrapper { gap: 20px; }
+
+.header-top-social-list { gap: 8px; }
+
+.header-top-social-link {
+    color: var(--white);
+    font-size: 15px;
+}
+
+.header-top-btn {
+    background: var(--orange-soda);
+    color: var(--white);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-700);
+    padding: 4px 15px;
+}
+
+.header-top-btn:is(:hover, :focus) { --orange-soda: hsl(7, 72%, 46%); }
+
 
