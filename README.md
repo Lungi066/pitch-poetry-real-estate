@@ -8,4 +8,5 @@ TECH STACK: JAVASCRIPT, HTML, CSS, SASS
 
 [Try It Out](https://lungi066.github.io/pitch-poetry-real-estate/)
 
+SCREENSHOT
 ![ppre](https://github.com/Lungi066/pitch-poetry-real-estate/assets/126391834/fde5f18f-d812-4817-8cb7-32e62898974a)
